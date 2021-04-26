@@ -97,12 +97,12 @@ The probability of getting heads when an unbiased coin is tossed 1 time  is {\la
   So the probability of getting atleast one head is $P(X>0) $.\\
   By binomial distribution we also know that 
   \[\sum_{i=0}^{n}P(X=i)=1\]
-  So    \;\;\;\;\;\;\;\;\;\;\;\;\;    $Prob + \Pr(X=0)=1$
-  $$Ans = 1-\Pr(X=0)$$
+  So    \;\;\;\;\;\;\;\;\;\;\;\;\;    $\Pr(X\ge 1) + \Pr(X=0)=1$
+  $$\Pr(X\ge 1) = 1-\Pr(X=0)$$
   $$= 1-\frac{^nC_0}{2^n}$$
-  $$Prob =1- \frac{1}{2^n}$$
+  $$\Pr(X\ge 1) =1- \frac{1}{2^n}$$
   the condition given was probability of getting at least one head must be greater than  $90\%$
-  $$\implies  Prob>0.9$$
+  $$\implies  \Pr(X\ge 1)>0.9$$
   $$\implies 1-\frac{1}{2^n}>0.9$$
   $$\implies\frac{1}{2^n}<0.1$$
   $$\implies 2^n>10$$
