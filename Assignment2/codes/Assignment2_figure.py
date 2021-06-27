@@ -25,12 +25,12 @@ y = [0.5,1]
 plt.plot(x, y, marker='o', color='blue', markerfacecolor='blue', markersize='12')
   
 # naming the x axis
-plt.xlabel('x - axis')
+plt.xlabel('x')
 # naming the y axis
-plt.ylabel('y - axis')
+plt.ylabel('PDF')
   
 # giving a title to my graph
-plt.title('My first graph!')
+plt.title('PDF function!')
   
 # function to show the plot
 plt.show()
