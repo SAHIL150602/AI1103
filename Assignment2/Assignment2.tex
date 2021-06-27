@@ -64,7 +64,7 @@ columns=fullflexible
 }
 
 \begin{document}
-\title{Assignment 1}
+\title{Assignment 2}
 \author{Muttareddy Sahil Chandra - CS20BTECH11033}
 \maketitle
 \newpage
@@ -93,17 +93,18 @@ P((0,x])=\begin{cases}
 $$
 Then $ P(\{\frac{1}{2} \})=$
 \section{Solution}
-Given that,\\
+Given that, the CDF of the given random variable is
 $$
-P((0,x])=\begin{cases}
-			x/2, & 0<x<1/2\\
-            x, & 1/2\leq x\leq 1
+F_X(x)=\begin{cases}
+			x/2, & 0<x<\frac{1}{2}\\
+            x, & \frac{1}{2}\leq x\leq 1
 		 \end{cases}
 $$
-that means Probability of the variable being only $ \frac{1}{2}$ is 
+that means probability of the random variable being $m$ is
+$$\Pr(X = m) =F_X(m) -  \lim_{t \to m^-}F_X(t)$$
+Hence the probability value at $ X =\frac{1}{2}$ is
 \begin{align*}
-    P(\{ 1/2\}) &= P((0,1/2]) -P((0,1/2))\\
-    &= \frac{1}{2} - \lim_{x \to \frac{1}{2}^-} P((0,x])\\
+    \Pr(X = 1/2) &= F_X\Big(\frac{1}{2}\Big) -\lim_{t \to \frac{1}{2}^-}F_X(t)\\
     &= \frac{1}{2} - \lim_{x \to \frac{1}{2}^-} \frac{x}{2}\\
     &= \frac{1}{2} - \frac{1}{4}\\
     &= \frac{1}{4} = 0.25
