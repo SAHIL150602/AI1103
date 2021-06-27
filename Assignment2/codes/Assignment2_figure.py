@@ -30,7 +30,7 @@ plt.xlabel('x')
 plt.ylabel('PDF')
   
 # giving a title to my graph
-plt.title('PDF function!')
+plt.title('PDF function')
   
 # function to show the plot
 plt.show()
