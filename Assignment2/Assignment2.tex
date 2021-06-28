@@ -1,0 +1,114 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+
+\begin{document}
+\title{Assignment 2}
+\author{Muttareddy Sahil Chandra - CS20BTECH11033}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/SAHIL150602/AI1103/blob/main/Assignment2/codes/Assignment2.py
+https://github.com/SAHIL150602/AI1103/blob/main/Assignment2/codes/Assignment2_figure.py
+
+\end{lstlisting}
+%
+and latex-tikz codes from 
+%
+\begin{lstlisting}
+https://github.com/SAHIL150602/AI1103/blob/main/Assignment2/Assignment2.tex
+\end{lstlisting}
+\section{Problem}
+Let $\Omega = (0,1]$ be the sample space and let $P(.) $ be a probability function defined by 
+$$
+P((0,x])=\begin{cases}
+			x/2, & 0<x<1/2\\
+            x, & 1/2\leq x\leq 1
+		 \end{cases}
+$$
+Then $ P(\{\frac{1}{2} \})=$
+\section{Solution}
+Given that, the CDF of the given random variable is
+$$
+F_X(x)=\begin{cases}
+			x/2, & 0<x<\frac{1}{2}\\
+            x, & \frac{1}{2}\leq x\leq 1
+		 \end{cases}
+$$
+that means probability of the random variable being $m$ is
+\begin{align}
+\Pr(X = m) =F_X(m) -  \lim_{t \to m^-}F_X(t)
+\end{align}
+Hence the probability value at $ X =\frac{1}{2}$ is
+\begin{align}
+    \Pr(X = 1/2) &= F_X\Big\brak(\frac{1}{2}) -\lim_{t \to \frac{1}{2}^-}F_X(t)\\
+    &= \frac{1}{2} - \lim_{x \to \frac{1}{2}^-} \frac{x}{2}\\
+    &= \frac{1}{2} - \frac{1}{4}\\
+    &= \frac{1}{4} = 0.25
+\end{align}
+\end{document}
