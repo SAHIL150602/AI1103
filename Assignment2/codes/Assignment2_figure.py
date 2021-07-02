@@ -27,10 +27,10 @@ plt.plot(x, y, marker='o', color='blue', markerfacecolor='blue', markersize='12'
 # naming the x axis
 plt.xlabel('x')
 # naming the y axis
-plt.ylabel('PDF')
+plt.ylabel('CDF')
   
 # giving a title to my graph
-plt.title('PDF function')
+plt.title('CDF function')
   
 # function to show the plot
 plt.show()
